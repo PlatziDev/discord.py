@@ -251,7 +251,7 @@ def flatten_user(cls: T) -> T:
 
 
 @flatten_user
-class Member(discord.abc.Messageable, _UserTag):
+class Member(discordpy.abc.Messageable, _UserTag):
     """Represents a Discord member to a :class:`Guild`.
 
     This implements a lot of the functionality of :class:`User`.
@@ -761,7 +761,7 @@ class Member(discord.abc.Messageable, _UserTag):
         mute: bool = MISSING,
         deafen: bool = MISSING,
         suppress: bool = MISSING,
-        roles: Collection[discord.abc.Snowflake] = MISSING,
+        roles: Collection[discordpy.abc.Snowflake] = MISSING,
         voice_channel: Optional[VocalGuildChannel] = MISSING,
         timed_out_until: Optional[datetime.datetime] = MISSING,
         bypass_verification: bool = MISSING,

@@ -150,7 +150,7 @@ class CommandTree(Generic[ClientT]):
         -----------
         command_id: :class:`int`
             The ID of the command to fetch.
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             The guild to fetch the command from. If not passed then the global command
             is fetched instead.
 
@@ -194,7 +194,7 @@ class CommandTree(Generic[ClientT]):
 
         Parameters
         -----------
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             The guild to fetch the commands from. If not passed then global commands
             are fetched instead.
 
@@ -230,7 +230,7 @@ class CommandTree(Generic[ClientT]):
 
         Parameters
         -----------
-        guild: :class:`~discord.abc.Snowflake`
+        guild: :class:`~discordpy.abc.Snowflake`
             The guild to copy the commands to.
 
         Raises
@@ -284,10 +284,10 @@ class CommandTree(Generic[ClientT]):
         -----------
         command: Union[:class:`Command`, :class:`Group`]
             The application command or group to add.
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             The guild to add the command to. If not given or ``None`` then it
             becomes a global command instead.
-        guilds: List[:class:`~discord.abc.Snowflake`]
+        guilds: List[:class:`~discordpy.abc.Snowflake`]
             The list of guilds to add the command to. This cannot be mixed
             with the ``guild`` parameter. If no guilds are given at all
             then it becomes a global command instead.
@@ -427,7 +427,7 @@ class CommandTree(Generic[ClientT]):
         -----------
         command: :class:`str`
             The name of the root command to remove.
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             The guild to remove the command from. If not given or ``None`` then it
             removes a global command instead.
         type: :class:`~discord.AppCommandType`
@@ -464,7 +464,7 @@ class CommandTree(Generic[ClientT]):
 
         Parameters
         -----------
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             The guild to remove the commands from. If ``None`` then it
             removes all global commands instead.
         type: :class:`~discord.AppCommandType`
@@ -544,7 +544,7 @@ class CommandTree(Generic[ClientT]):
         -----------
         command: :class:`str`
             The name of the root command to get.
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             The guild to get the command from. If not given or ``None`` then it
             gets a global command instead.
         type: :class:`~discord.AppCommandType`
@@ -623,7 +623,7 @@ class CommandTree(Generic[ClientT]):
 
         Parameters
         -----------
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             The guild to get the commands from, not including global commands.
             If not given or ``None`` then only global commands are returned.
         type: Optional[:class:`~discord.AppCommandType`]
@@ -690,7 +690,7 @@ class CommandTree(Generic[ClientT]):
 
         Parameters
         -----------
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             The guild to iterate the commands from, not including global commands.
             If not given or ``None`` then only global commands are iterated.
         type: :class:`~discord.AppCommandType`
@@ -854,10 +854,10 @@ class CommandTree(Generic[ClientT]):
             Whether the command is NSFW and should only work in NSFW channels. Defaults to ``False``.
 
             Due to a Discord limitation, this does not work on subcommands.
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             The guild to add the command to. If not given or ``None`` then it
             becomes a global command instead.
-        guilds: List[:class:`~discord.abc.Snowflake`]
+        guilds: List[:class:`~discordpy.abc.Snowflake`]
             The list of guilds to add the command to. This cannot be mixed
             with the ``guild`` parameter. If no guilds are given at all
             then it becomes a global command instead.
@@ -937,10 +937,10 @@ class CommandTree(Generic[ClientT]):
             Whether the command is NSFW and should only work in NSFW channels. Defaults to ``False``.
 
             Due to a Discord limitation, this does not work on subcommands.
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             The guild to add the command to. If not given or ``None`` then it
             becomes a global command instead.
-        guilds: List[:class:`~discord.abc.Snowflake`]
+        guilds: List[:class:`~discordpy.abc.Snowflake`]
             The list of guilds to add the command to. This cannot be mixed
             with the ``guild`` parameter. If no guilds are given at all
             then it becomes a global command instead.
@@ -1026,7 +1026,7 @@ class CommandTree(Generic[ClientT]):
 
         Parameters
         -----------
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             The guild to sync the commands to. If ``None`` then it
             syncs all global commands instead.
 

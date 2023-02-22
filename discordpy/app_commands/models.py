@@ -368,7 +368,7 @@ class AppCommand(Hashable):
 
         Parameters
         -----------
-        guild: :class:`~discord.abc.Snowflake`
+        guild: :class:`~discordpy.abc.Snowflake`
             The guild to retrieve the permissions from.
 
         Raises

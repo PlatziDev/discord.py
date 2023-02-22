@@ -523,7 +523,7 @@ class Invite(Hashable):
 
         Parameters
         ----------
-        scheduled_event: :class:`~discord.abc.Snowflake`
+        scheduled_event: :class:`~discordpy.abc.Snowflake`
             The ID of the scheduled event.
 
         Returns

@@ -234,7 +234,7 @@ class AppInfo:
 
 
 class PartialAppInfo:
-    """Represents a partial AppInfo given by :func:`~discord.abc.GuildChannel.create_invite`
+    """Represents a partial AppInfo given by :func:`~discordpy.abc.GuildChannel.create_invite`
 
     .. versionadded:: 2.0
 

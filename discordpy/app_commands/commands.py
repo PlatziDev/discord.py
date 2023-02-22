@@ -2327,7 +2327,7 @@ def guilds(*guild_ids: Union[Snowflake, int]) -> Callable[[T], T]:
 
     Parameters
     -----------
-    \*guild_ids: Union[:class:`int`, :class:`~discord.abc.Snowflake`]
+    \*guild_ids: Union[:class:`int`, :class:`~discordpy.abc.Snowflake`]
         The guilds to associate this command with. The command tree will
         use this as the default when added rather than adding it as a global
         command.

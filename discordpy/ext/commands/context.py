@@ -101,14 +101,14 @@ class DeferTyping:
         pass
 
 
-class Context(discord.abc.Messageable, Generic[BotT]):
+class Context(discordpy.abc.Messageable, Generic[BotT]):
     r"""Represents the context in which a command is being invoked under.
 
     This class contains a lot of meta data to help you understand more about
     the invocation context. This class is not created manually and is instead
     passed around to commands as the first parameter.
 
-    This class implements the :class:`~discord.abc.Messageable` ABC.
+    This class implements the :class:`~discordpy.abc.Messageable` ABC.
 
     Attributes
     -----------
@@ -402,7 +402,7 @@ class Context(discord.abc.Messageable, Generic[BotT]):
         """:class:`bool`: Checks if the invocation context is valid to be invoked with."""
         return self.prefix is not None and self.command is not None
 
-    async def _get_channel(self) -> discord.abc.Messageable:
+    async def _get_channel(self) -> discordpy.abc.Messageable:
         return self.channel
 
     @property
@@ -740,7 +740,7 @@ class Context(discord.abc.Messageable, Generic[BotT]):
 
         Sends a message to the destination with the content given.
 
-        This works similarly to :meth:`~discord.abc.Messageable.send` for non-interaction contexts.
+        This works similarly to :meth:`~discordpy.abc.Messageable.send` for non-interaction contexts.
 
         For interaction based contexts this does one of the following:
 

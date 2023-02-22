@@ -1699,7 +1699,7 @@ class Webhook(BaseWebhook):
             library.
 
             .. versionadded:: 2.0
-        thread: :class:`~discord.abc.Snowflake`
+        thread: :class:`~discordpy.abc.Snowflake`
             The thread to send this webhook to.
 
             .. versionadded:: 2.0
@@ -1831,7 +1831,7 @@ class Webhook(BaseWebhook):
         ------------
         id: :class:`int`
             The message ID to look for.
-        thread: :class:`~discord.abc.Snowflake`
+        thread: :class:`~discordpy.abc.Snowflake`
             The thread to look in.
 
         Raises
@@ -1923,7 +1923,7 @@ class Webhook(BaseWebhook):
             :meth:`send`.
 
             .. versionadded:: 2.0
-        thread: :class:`~discord.abc.Snowflake`
+        thread: :class:`~discordpy.abc.Snowflake`
             The thread the webhook message belongs to.
 
             .. versionadded:: 2.0
@@ -2011,7 +2011,7 @@ class Webhook(BaseWebhook):
         ------------
         message_id: :class:`int`
             The message ID to delete.
-        thread: :class:`~discord.abc.Snowflake`
+        thread: :class:`~discordpy.abc.Snowflake`
             The thread the webhook message belongs to.
 
             .. versionadded:: 2.0

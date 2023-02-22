@@ -204,7 +204,7 @@ class User(Snowflake, Protocol):
     - :class:`~discord.ClientUser`
     - :class:`~discord.Member`
 
-    This ABC must also implement :class:`~discord.abc.Snowflake`.
+    This ABC must also implement :class:`~discordpy.abc.Snowflake`.
 
     Attributes
     -----------
@@ -277,7 +277,7 @@ class PrivateChannel:
     - :class:`~discord.DMChannel`
     - :class:`~discord.GroupChannel`
 
-    This ABC must also implement :class:`~discord.abc.Snowflake`.
+    This ABC must also implement :class:`~discordpy.abc.Snowflake`.
 
     Attributes
     -----------
@@ -329,7 +329,7 @@ class GuildChannel:
     - :class:`~discord.StageChannel`
     - :class:`~discord.ForumChannel`
 
-    This ABC must also implement :class:`~discord.abc.Snowflake`.
+    This ABC must also implement :class:`~discordpy.abc.Snowflake`.
 
     Attributes
     -----------
@@ -557,7 +557,7 @@ class GuildChannel:
 
         Parameters
         -----------
-        obj: Union[:class:`~discord.Role`, :class:`~discord.abc.User`, :class:`~discord.Object`]
+        obj: Union[:class:`~discord.Role`, :class:`~discordpy.abc.User`, :class:`~discord.Object`]
             The role or user denoting whose overwrite to get.
 
         Returns
@@ -1076,10 +1076,10 @@ class GuildChannel:
             Whether to move the channel to the end of the
             channel list (or category if given).
             This is mutually exclusive with ``beginning``, ``before``, and ``after``.
-        before: :class:`~discord.abc.Snowflake`
+        before: :class:`~discordpy.abc.Snowflake`
             The channel that should be before our current channel.
             This is mutually exclusive with ``beginning``, ``end``, and ``after``.
-        after: :class:`~discord.abc.Snowflake`
+        after: :class:`~discordpy.abc.Snowflake`
             The channel that should be after our current channel.
             This is mutually exclusive with ``beginning``, ``end``, and ``before``.
         offset: :class:`int`
@@ -1089,7 +1089,7 @@ class GuildChannel:
             while a negative number moves it above. Note that this
             number is relative and computed after the ``beginning``,
             ``end``, ``before``, and ``after`` parameters.
-        category: Optional[:class:`~discord.abc.Snowflake`]
+        category: Optional[:class:`~discordpy.abc.Snowflake`]
             The category to move this channel under.
             If ``None`` is given then it moves it out of the category.
             This parameter is ignored if moving a category channel.
@@ -1680,15 +1680,15 @@ class Messageable:
             The number of messages to retrieve.
             If ``None``, retrieves every message in the channel. Note, however,
             that this would make it a slow operation.
-        before: Optional[Union[:class:`~discord.abc.Snowflake`, :class:`datetime.datetime`]]
+        before: Optional[Union[:class:`~discordpy.abc.Snowflake`, :class:`datetime.datetime`]]
             Retrieve messages before this date or message.
             If a datetime is provided, it is recommended to use a UTC aware datetime.
             If the datetime is naive, it is assumed to be local time.
-        after: Optional[Union[:class:`~discord.abc.Snowflake`, :class:`datetime.datetime`]]
+        after: Optional[Union[:class:`~discordpy.abc.Snowflake`, :class:`datetime.datetime`]]
             Retrieve messages after this date or message.
             If a datetime is provided, it is recommended to use a UTC aware datetime.
             If the datetime is naive, it is assumed to be local time.
-        around: Optional[Union[:class:`~discord.abc.Snowflake`, :class:`datetime.datetime`]]
+        around: Optional[Union[:class:`~discordpy.abc.Snowflake`, :class:`datetime.datetime`]]
             Retrieve messages around this date or message.
             If a datetime is provided, it is recommended to use a UTC aware datetime.
             If the datetime is naive, it is assumed to be local time.

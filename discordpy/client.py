@@ -2656,7 +2656,7 @@ class Client:
 
         Parameters
         -----------
-        user: :class:`~discord.abc.Snowflake`
+        user: :class:`~discordpy.abc.Snowflake`
             The user to create a DM with.
 
         Returns

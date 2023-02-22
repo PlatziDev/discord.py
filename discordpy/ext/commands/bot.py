@@ -742,13 +742,13 @@ class BotBase(GroupMixin[None]):
             instead of raising an error.
 
             .. versionadded:: 2.0
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             If the cog is an application command group, then this would be the
             guild where the cog group would be added to. If not given then
             it becomes a global command instead.
 
             .. versionadded:: 2.0
-        guilds: List[:class:`~discord.abc.Snowflake`]
+        guilds: List[:class:`~discordpy.abc.Snowflake`]
             If the cog is an application command group, then this would be the
             guilds where the cog group would be added to. If not given then
             it becomes a global command instead. Cannot be mixed with
@@ -835,13 +835,13 @@ class BotBase(GroupMixin[None]):
         -----------
         name: :class:`str`
             The name of the cog to remove.
-        guild: Optional[:class:`~discord.abc.Snowflake`]
+        guild: Optional[:class:`~discordpy.abc.Snowflake`]
             If the cog is an application command group, then this would be the
             guild where the cog group would be removed from. If not given then
             a global command is removed instead instead.
 
             .. versionadded:: 2.0
-        guilds: List[:class:`~discord.abc.Snowflake`]
+        guilds: List[:class:`~discordpy.abc.Snowflake`]
             If the cog is an application command group, then this would be the
             guilds where the cog group would be removed from. If not given then
             a global command is removed instead instead. Cannot be mixed with
