@@ -410,7 +410,7 @@ class ClientUser(BaseUser):
         return ClientUser(state=self._state, data=data)
 
 
-class User(BaseUser, discord.abc.Messageable):
+class User(BaseUser, discordpy.abc.Messageable):
     """Represents a Discord user.
 
     .. container:: operations
