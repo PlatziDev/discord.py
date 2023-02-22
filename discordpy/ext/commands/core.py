@@ -46,7 +46,7 @@ from typing import (
 )
 import re
 
-import discord
+import discordpy as discord
 
 from ._types import _BaseCommand, CogT
 from .cog import Cog
@@ -55,7 +55,7 @@ from .converter import Greedy, run_converters
 from .cooldowns import BucketType, Cooldown, CooldownMapping, DynamicCooldownMapping, MaxConcurrency
 from .errors import *
 from .parameters import Parameter, Signature
-from discord.app_commands.commands import NUMPY_DOCSTRING_ARG_REGEX
+from discordpy.app_commands.commands import NUMPY_DOCSTRING_ARG_REGEX
 
 if TYPE_CHECKING:
     from typing_extensions import Concatenate, ParamSpec, Self

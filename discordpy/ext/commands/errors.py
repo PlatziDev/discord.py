@@ -26,13 +26,13 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Callable, List, Optional, Tuple, Union
 
-from discord.errors import ClientException, DiscordException
+from discordpy.errors import ClientException, DiscordException
 
 if TYPE_CHECKING:
-    from discord.abc import GuildChannel
-    from discord.threads import Thread
-    from discord.types.snowflake import Snowflake, SnowflakeList
-    from discord.app_commands import AppCommandError
+    from discordpy.abc import GuildChannel
+    from discordpy.threads import Thread
+    from discordpy.types.snowflake import Snowflake, SnowflakeList
+    from discordpy.app_commands import AppCommandError
 
     from ._types import BotT
     from .context import Context

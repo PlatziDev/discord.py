@@ -68,7 +68,7 @@ if TYPE_CHECKING:
     # Generally, these two libraries are supposed to be separate from each other.
     # However, for type hinting purposes it's unfortunately necessary for one to
     # reference the other to prevent type checking errors in callbacks
-    from discord.ext import commands
+    from discordpy.ext import commands
 
     ErrorFunc = Callable[[Interaction, AppCommandError], Coroutine[Any, Any, None]]
 
@@ -1355,7 +1355,7 @@ class Group:
 
     .. code-block:: python3
 
-        from discord import app_commands
+        from discordpy import app_commands
 
         @app_commands.guild_only()
         class MyGroup(app_commands.Group):

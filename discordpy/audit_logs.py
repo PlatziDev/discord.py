@@ -478,7 +478,7 @@ class AuditLogChanges:
             return
 
         # avoid circular import
-        from discord.app_commands import AppCommandPermissions
+        from discordpy.app_commands import AppCommandPermissions
 
         state = entry._state
         guild = entry.guild

@@ -30,7 +30,7 @@ import argparse
 import sys
 from pathlib import Path
 
-import discord
+import discordpy as discord
 import importlib.metadata
 import aiohttp
 import platform
@@ -62,8 +62,8 @@ def core(parser: argparse.ArgumentParser, args: argparse.Namespace) -> None:
 
 _bot_template = """#!/usr/bin/env python3
 
-from discord.ext import commands
-import discord
+from discordpy.ext import commands
+import discordpy as discord
 import config
 
 class Bot(commands.{base}):
@@ -120,8 +120,8 @@ var/
 config.py
 """
 
-_cog_template = '''from discord.ext import commands
-import discord
+_cog_template = '''from discordpy.ext import commands
+import discordpy as discord
 
 class {name}(commands.Cog{attrs}):
     """The description for {name} goes here."""

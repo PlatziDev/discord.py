@@ -24,9 +24,9 @@ DEALINGS IN THE SOFTWARE.
 from __future__ import annotations
 
 import inspect
-import discord
-from discord import app_commands
-from discord.utils import maybe_coroutine, _to_kebab_case
+import discordpy as discord
+from discordpy import app_commands
+from discordpy.utils import maybe_coroutine, _to_kebab_case
 
 from typing import (
     Any,
@@ -49,7 +49,7 @@ from ._types import _BaseCommand, BotT
 
 if TYPE_CHECKING:
     from typing_extensions import Self
-    from discord.abc import Snowflake
+    from discordpy.abc import Snowflake
 
     from .bot import BotBase
     from .context import Context
@@ -63,7 +63,7 @@ __all__ = (
 
 FuncT = TypeVar('FuncT', bound=Callable[..., Any])
 
-MISSING: Any = discord.utils.MISSING
+MISSING: Any = discordpy.utils.MISSING
 
 
 class CogMeta(type):
@@ -759,8 +759,8 @@ class GroupCog(Cog):
 
     .. code-block:: python3
 
-        from discord import app_commands
-        from discord.ext import commands
+        from discordpy import app_commands
+        from discordpy.ext import commands
 
         @app_commands.guild_only()
         class MyCog(commands.GroupCog, group_name='my-cog'):

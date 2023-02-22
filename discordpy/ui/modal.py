@@ -64,7 +64,7 @@ class Modal(View):
 
     .. code-block:: python3
 
-        from discord import ui
+        from discordpy import ui
 
         class Questionnaire(ui.Modal, title='Questionnaire Response'):
             name = ui.TextInput(label='Name')

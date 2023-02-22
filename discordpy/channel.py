@@ -44,7 +44,7 @@ from typing import (
 )
 import datetime
 
-import discord.abc
+import discordpy.abc
 from .scheduled_event import ScheduledEvent
 from .permissions import PermissionOverwrite, Permissions
 from .enums import ChannelType, ForumLayoutType, PrivacyLevel, try_enum, VideoQualityMode, EntityType

@@ -38,10 +38,10 @@ from typing import (
     Optional,
 )
 
-import discord
+import discordpy as discord
 import inspect
-from discord import app_commands
-from discord.utils import MISSING, maybe_coroutine, async_all
+from discordpy import app_commands
+from discordpy.utils import MISSING, maybe_coroutine, async_all
 from .core import Command, Group
 from .errors import BadArgument, CommandRegistrationError, CommandError, HybridCommandError, ConversionError
 from .converter import Converter, Range, Greedy, run_converters, CONVERTER_MAPPING
@@ -55,7 +55,7 @@ if TYPE_CHECKING:
     from ._types import ContextT, Coro, BotT
     from .bot import Bot
     from .context import Context
-    from discord.app_commands.commands import (
+    from discordpy.app_commands.commands import (
         Check as AppCommandCheck,
         AutocompleteCallback,
         ChoiceT,

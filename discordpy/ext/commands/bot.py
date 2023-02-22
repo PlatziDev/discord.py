@@ -50,10 +50,10 @@ from typing import (
     overload,
 )
 
-import discord
-from discord import app_commands
-from discord.app_commands.tree import _retrieve_guild_ids
-from discord.utils import MISSING, _is_submodule
+import discordpy as discord
+from discordpy import app_commands
+from discordpy.app_commands.tree import _retrieve_guild_ids
+from discordpy.utils import MISSING, _is_submodule
 
 from .core import GroupMixin
 from .view import StringView
@@ -68,9 +68,9 @@ if TYPE_CHECKING:
 
     import importlib.machinery
 
-    from discord.message import Message
-    from discord.interactions import Interaction
-    from discord.abc import User, Snowflake
+    from discordpy.message import Message
+    from discordpy.interactions import Interaction
+    from discordpy.abc import User, Snowflake
     from ._types import (
         _Bot,
         BotT,

@@ -26,10 +26,10 @@ from __future__ import annotations
 import re
 from typing import TYPE_CHECKING, Any, Dict, Generator, Generic, List, Optional, TypeVar, Union, Sequence, Type
 
-import discord.abc
-import discord.utils
-from discord import Interaction, Message, Attachment, MessageType, User, PartialMessageable, Permissions, ChannelType, Thread
-from discord.context_managers import Typing
+import discordpy.abc
+import discordpy.utils
+from discordpy import Interaction, Message, Attachment, MessageType, User, PartialMessageable, Permissions, ChannelType, Thread
+from discordpy.context_managers import Typing
 from .view import StringView
 
 from ._types import BotT
@@ -37,19 +37,19 @@ from ._types import BotT
 if TYPE_CHECKING:
     from typing_extensions import Self, ParamSpec, TypeGuard
 
-    from discord.abc import MessageableChannel
-    from discord.guild import Guild
-    from discord.member import Member
-    from discord.state import ConnectionState
-    from discord.user import ClientUser
-    from discord.voice_client import VoiceProtocol
-    from discord.embeds import Embed
-    from discord.file import File
-    from discord.mentions import AllowedMentions
-    from discord.sticker import GuildSticker, StickerItem
-    from discord.message import MessageReference, PartialMessage
-    from discord.ui import View
-    from discord.types.interactions import ApplicationCommandInteractionData
+    from discordpy.abc import MessageableChannel
+    from discordpy.guild import Guild
+    from discordpy.member import Member
+    from discordpy.state import ConnectionState
+    from discordpy.user import ClientUser
+    from discordpy.voice_client import VoiceProtocol
+    from discordpy.embeds import Embed
+    from discordpy.file import File
+    from discordpy.mentions import AllowedMentions
+    from discordpy.sticker import GuildSticker, StickerItem
+    from discordpy.message import MessageReference, PartialMessage
+    from discordpy.ui import View
+    from discordpy.types.interactions import ApplicationCommandInteractionData
 
     from .cog import Cog
     from .core import Command

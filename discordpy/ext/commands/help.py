@@ -44,7 +44,7 @@ from typing import (
     Mapping,
 )
 
-import discord.utils
+import discordpy.utils
 
 from .core import Group, Command, get_signature_parameters
 from .errors import CommandError
@@ -52,7 +52,7 @@ from .errors import CommandError
 if TYPE_CHECKING:
     from typing_extensions import Self
 
-    import discord.abc
+    import discordpy.abc
 
     from .bot import BotBase
     from .context import Context
