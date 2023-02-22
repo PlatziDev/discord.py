@@ -24,9 +24,9 @@ DEALINGS IN THE SOFTWARE.
 
 from __future__ import annotations
 
-import discord
-from discord import app_commands
-from discord.ext import commands
+import discordpy as discord
+from discordpy import app_commands
+from discordpy.ext import commands
 
 
 def test_descriptions_describe():

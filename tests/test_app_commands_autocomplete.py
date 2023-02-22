@@ -25,10 +25,10 @@ DEALINGS IN THE SOFTWARE.
 from __future__ import annotations
 from typing import List
 
-import discord
+import discordpy as discord
 import pytest
-from discord import app_commands
-from discord.utils import MISSING
+from discordpy import app_commands
+from discordpy.utils import MISSING
 
 
 async def free_function_autocomplete(interaction: discord.Interaction, current: str) -> List[app_commands.Choice[str]]:

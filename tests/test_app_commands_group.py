@@ -24,9 +24,9 @@ DEALINGS IN THE SOFTWARE.
 
 from __future__ import annotations
 
-from discord import app_commands
-import discord
-from discord.ext import commands
+from discordpy import app_commands
+import discordpy as discord
+from discordpy.ext import commands
 
 
 def test_group_with_commands():

@@ -26,9 +26,9 @@ from __future__ import annotations
 from typing import Optional
 from typing_extensions import Annotated
 
-import discord
-from discord import app_commands
-from discord.ext import commands
+import discordpy as discord
+from discordpy import app_commands
+from discordpy.ext import commands
 
 import pytest
 

@@ -12,8 +12,8 @@ import datetime
 import pytest
 import sys
 
-from discord import utils
-from discord.ext import tasks
+from discordpy import utils
+from discordpy.ext import tasks
 
 
 @pytest.mark.asyncio

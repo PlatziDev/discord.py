@@ -28,9 +28,9 @@ from collections.abc import Coroutine
 from typing import Any, Type
 from unittest.mock import AsyncMock
 
-import discord
-from discord import app_commands
-from discord.ext import commands
+import discordpy as discord
+from discordpy import app_commands
+from discordpy.ext import commands
 import pytest
 
 

@@ -24,7 +24,7 @@ DEALINGS IN THE SOFTWARE.
 
 from __future__ import annotations
 
-from discord.ext import commands
+from discordpy.ext import commands
 
 
 def test_ext_commands_descriptions_explicit():
